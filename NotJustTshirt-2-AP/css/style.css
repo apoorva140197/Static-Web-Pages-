@@ -1,0 +1,809 @@
+body {
+   /* background: white;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;*/
+  }
+  
+
+   
+ 
+  
+  .headlink
+  {
+    color: black;
+    padding-left: 10px;
+    font-family: "Hammersmith One";
+    font-weight: 500;
+    font-size : 20px
+  }
+ 
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+   /* font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;*/
+    font-family: "Hammersmith One";
+  }
+  
+  /* Back to top button */
+  
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background : #cf4a64;
+    opacity: 1  ;
+    color: #fff;
+    width: 50px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 15px 15px 2px 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+  }
+  
+  .back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+  }
+  
+  /* Prelaoder */
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #E74C3C;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    /* -webkit-animation: animate-preloader 1s linear infinite; */
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  /* @-webkit-keyframes animate-preloader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  } */
+  
+  @keyframes animate-preloader {
+    0% {
+      /* -webkit-transform: rotate(0deg); */
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      /* -webkit-transform: rotate(360deg); */
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .navbar-nav li.active > a {
+    border-radius: 20px 20px 0 0;
+    border-right: 5px solid #cf4a64;
+     border-left: 5px solid #cf4a64;
+     border-top: 2px solid  #cf4a64;
+     background-color: #f3e0e4;
+     border-bottom: 2px solid  #cf4a64;
+
+    
+  }
+
+
+/* header */
+  
+  #header {
+    padding: 30px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  #header.header-scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+  }
+  
+  #header #logo {
+    float: right;
+    font-size: 20px;
+  }
+  
+  #header #logo img {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+  }
+  
+/* Intro */
+
+
+.hero-area {
+  background-image: url("../img/tshirt7.jpg");
+  background-size: cover;
+ height: 100vh;
+  position: relative;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-pack: center; */
+      /* -ms-flex-pack: center; */
+          justify-content: center;
+  /* -webkit-box-align: center; */
+      /* -ms-flex-align: center; */
+          align-items: center;
+}
+
+.hero-area:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.60);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-area .block {
+  color: #fff;
+}
+
+.hero-area .block h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-area .block p {
+  color: #fff;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.logocls
+{
+  background: #f3e0e4;
+}
+
+
+
+
+
+
+  /* Nav Menu Essentials */
+  
+  
+
+  .headcls
+  {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+  
+  }
+
+  .headcls1
+  {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-family: "Hammersmith One";
+    font-size : 80px
+
+  }
+  
+ 
+  
+
+  /* Sections Header*/
+  
+  .section-header h3 {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 40px;
+  }
+  
+  .section-header p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+  }
+  
+  .section-bg1
+  {
+     background : white
+  }
+
+/*
+  #section h3{
+    font-family: ;
+    padding-left: 20px;
+    color: white;
+
+  }*/
+  
+  /* Section with background*/
+  
+  .carocontent
+{
+  text-align: center;
+  padding-top: 10%
+
+}
+
+  /* About Us Section*/
+  #about {
+    /* background: url("../img/headimg2.jpg") center top no-repeat fixed;
+    background-size: cover; */
+    background: #eedbde;
+    padding: 60px 0 20px 0;
+    position: relative;
+    
+    /* background: #f7f7f7; */
+  }
+
+  .aboutimg
+  {
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+#about:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutp
+{
+  color: white;
+  font-size: 17px;
+}
+
+  
+
+  
+  .aboutcls
+  {
+    font-size: 32px;
+    color: #cf4a64;
+    
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-family: "Hammersmith One";
+  
+  }
+
+  .contactcls
+  {
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
+    
+    text-align: left;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Hammersmith One";
+
+   
+  }
+
+  .servicecls
+  {
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-family: "Hammersmith One";
+  }
+  
+  .srvices_main1 {
+    overflow: hidden;
+    padding: 30px 0 0;
+    width: 100%;
+}
+.service_first {
+    background: #f2efef none repeat scroll 0 0;
+    border: 1px dotted #c0c0c0;
+    border-radius: 0;
+    padding: 20px 10px;
+    width: 100%;
+}
+.service_first h1 {
+    color: #000;
+    font-family: 'Hammersmith One';
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 5px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid rgb(157, 191, 71);
+    padding-bottom: 9px;
+    position: relative;
+}
+.service_first p {
+    font-family: 'Assistant';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 15px 15px;
+    text-align: center;
+}
+.service_button {
+    padding: 10px 0;
+    width: 100%;
+}
+/*service_button a {
+    background-color: rgb(157, 191, 71);
+    background-image: rgb(157, 191, 71);
+    border: 1px solid;
+    border-radius: 0;
+    color: #fff;
+    font-family: roboto;
+    font-size: 16px;
+    margin: 0 135px;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}*/
+.service_button a:hover {
+    background: #000000 none repeat scroll 0 0;
+}
+
+.service_first:hover {
+    background: #fff none repeat scroll 0 0;
+    border: 1px dashed #aaa;
+    cursor: auto;
+    display: block;
+}
+
+
+#services{
+
+ background-image: url("../img/tshirt5.jpeg") ;
+     background-color: rgba(255,255,255,0.7);
+    background-blend-mode: darken;
+     background-size: cover;
+      padding: 30px 0 40px 0;
+      height: 90vh;
+}
+
+
+
+  
+  
+  /* Gallery Section
+  --------------------------------*/
+  
+  #Gallery {
+    padding-bottom:100px;
+
+    background: #eedbde
+  }
+  
+  
+  
+  #Gallery .Gallery-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  #Gallery .Gallery-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.60);
+  }
+  
+  #Gallery .Gallery-item {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  #Gallery .Gallery-item figure {
+    background: black;
+    overflow: hidden;
+    height: 230px;
+    position: relative;
+  
+    margin: 0;
+
+  }
+  
+  #Gallery .Gallery-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+ /* #Gallery .Gallery-item figure .link-preview,
+  #Gallery .Gallery-item figure .link-details {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+  }
+  */
+  .img-responsive{
+    display: block;
+    max-width: 100%;
+    height: 230px;
+  }
+
+  .img-responsive1
+  {
+    display: block;
+    max-width: 100%;
+    height: 100px;
+  }
+
+  .slider-size {
+    height: 500px; 
+  }
+  
+  
+  .navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  /* Contact Section
+  --------------------------------*/
+  .paddsection {
+    padding: 30px 0;
+    background: #fff;
+
+  }
+
+  
+
+  #contact {
+   
+   
+     background-image: url("../img/map2.jpg") ;
+     background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+     background-size: cover;
+  }
+  
+
+
+  
+  .contact-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-details li {
+    padding-bottom: 10px;
+  }
+  
+  #contact input, #contact textarea {
+    width: 100%;
+  }
+  
+  
+  #contact  #sendmessage {
+    color: #18d26e;
+    border: 1px solid #18d26e;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px;
+  }
+  
+  #contact  #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px;
+  }
+  
+  #contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+    display: block;
+  }
+  
+  #contact .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+ 
+
+.container{
+ 
+
+}
+
+.container .content {
+ /* position: absolute;*/ /* Position the background text */
+  /*bottom: 0;*/ /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding-top: 30px;
+   padding-bottom: 30px;
+   
+   text-align: center;
+   font-size: 20px;
+   border-radius: 20px;
+   width: 300px;
+   height: 200px;
+  /* Full width */
+  /* Some padding */
+/*width: 90%;*/
+}
+
+  
+  /*Footer*/
+  
+  
+  
+  .navbar-nav > li{
+    padding-left:20px;
+  }
+  
+
+ 
+  
+  @media (min-width: 1024px) {
+    #header #logo {
+      padding-left: 60px;
+    }
+  
+    #intro p {
+      width: 60%;
+    }
+  
+ 
+
+    #nav-menu-container {
+      padding-right: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  
+    #header #logo h1 {
+      font-size: 28px;
+    }
+  
+    #header #logo img {
+      max-height: 40px;
+    }
+  
+    #intro h2 {
+      font-size: 28px;
+    }
+  
+    #nav-menu-container {
+      display: none;
+    }
+  
+    #mobile-nav-toggle {
+      display: inline;
+    }
+   
+  }
+
+
+  .aboutimg-cls
+  {
+
+    height : 350px;
+     width : 100%;
+  }
+
+
+  /* Services Section
+--------------------------------*/
+
+
+
+
+
+.service-img
+{
+
+  display: block;
+  width: 80%;
+  height: 150px;
+
+}
+
+.service-head
+{
+  font-family: "Hammersmith One";
+  font-size: 30px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 15px 15px 15px 15px;
+  color:black;
+  font-size: 12px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: 0.1em;
+  padding-left: 10px;
+  margin: 0 0 25px 0;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+
+.btn {
+  background: black;
+  border:2px solid grey;
+  border-radius: 15px 15px 15px 15px;
+  color: white;
+  font-size: 12px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+
+.btn:hover, .btn:focus {
+  color: grey;
+}
+
+.navigation {
+  transition: .3s all;
+}
+
+.navigation .logo-default {
+  display: none;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+  color:  black;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.contacthead
+{
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+.abouttxt
+{
+text-align: justify
+}
+
+.contactcir
+{
+  border-radius: 50%;
+  height: 140px;
+  background: rgb(157, 191, 71)
+}
+
+
+.btn1{
+background: #ecd3d8;
+opacity: 0.7;
+align-items: center;
+border-radius: 20px 20px 0px 0px; 
+
+
+}
+
+.arrow {
+  
+  position: relative;
+  background: black;
+  opacity: 0.7;
+  width: 280px;
+  height: 100px;
+  text-align:center;
+  line-height:100px;
+  
+}
+
+
+.arrow:before {
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  border-bottom-color: black;
+
+  border-width: 50px;
+  left: 280px;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+
+
+
